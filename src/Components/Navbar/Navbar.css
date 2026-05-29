@@ -190,3 +190,17 @@ nav {
     font-weight: 600;
     color: #0d213f;
 }
+.profile-dropdown {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profile-icon {
+  margin-right: 10px;
+}
