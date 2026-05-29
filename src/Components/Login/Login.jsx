@@ -30,6 +30,9 @@ const Login = () => {
       return;
     }
 
+    // ✅ SAVE USER (IMPORTANT FOR NAVBAR + LOGOUT)
+    localStorage.setItem("user", formData.email);
+
     alert("Login successful!");
   };
 

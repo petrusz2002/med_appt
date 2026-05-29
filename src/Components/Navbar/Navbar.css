@@ -180,3 +180,13 @@ nav {
     color:white; /* Hover effect */
 }
   
+.nav__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    font-weight: 600;
+    color: #0d213f;
+}
