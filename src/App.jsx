@@ -15,17 +15,15 @@ function App() {
 
       <Routes>
 
-        {/* HOME */}
         <Route path="/" element={<Landing_Page />} />
-
-        {/* SIGN UP */}
         <Route path="/signup" element={<Sign_Up />} />
-
-        {/* LOGIN */}
         <Route path="/login" element={<Login />} />
 
-        {/* INSTANT CONSULTATION */}
-        <Route path="/instant-consultation" element={<InstantConsultation />} />
+        {/* ✅ REQUIRED ROUTE */}
+        <Route
+          path="/instant-consultation"
+          element={<InstantConsultation />}
+        />
 
       </Routes>
 
