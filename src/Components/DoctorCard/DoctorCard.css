@@ -47,3 +47,17 @@
 .book-appointment-btn:hover {
   background-color: #0d6efd;
 }
+.cancel-appointment-btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-appointment-btn:hover {
+  background-color: darkred;
+}

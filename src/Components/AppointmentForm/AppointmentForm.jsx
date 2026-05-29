@@ -10,8 +10,16 @@ const AppointmentForm = ({ doctorName, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // basic validation
     if (!name || !phone || !date || !time) {
       alert("Please fill all fields");
+      return;
+    }
+
+    // 🔥 REQUIRED: 10 digit phone validation
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("Phone number must be exactly 10 digits");
       return;
     }
 
@@ -29,12 +37,10 @@ const AppointmentForm = ({ doctorName, onClose }) => {
 
   return (
     <div className="appointment-form-container">
-
       <h2>Book Appointment</h2>
       <h4>Doctor: {doctorName}</h4>
 
       <form onSubmit={handleSubmit}>
-
         <div className="form-group">
           <label>Name</label>
           <input
@@ -76,9 +82,7 @@ const AppointmentForm = ({ doctorName, onClose }) => {
         </div>
 
         <button type="submit">Confirm Appointment</button>
-
       </form>
-
     </div>
   );
 };
